@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Soul Mole</string>
+    <string-array name="top_options">
+        <item>Top 5</item>
+        <item>Top 10</item>
+        <item>All players</item>
+    </string-array>
+</resources>

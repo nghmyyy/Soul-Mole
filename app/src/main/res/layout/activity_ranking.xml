@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal"
+    android:background="@drawable/new_bgimg"
+    android:padding="16dp">
+
+    <!-- Tiêu đề Leaderboard với biểu tượng cúp, căn giữa trên cùng -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <!-- Biểu tượng cúp -->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_trophy"
+            android:contentDescription="Trophy icon" />
+
+        <!-- Tiêu đề Leaderboard -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LEADERBOARD"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerFilter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="16dp"
+        android:entries="@array/top_options" />
+
+    <!-- Danh sách xếp hạng căn giữa màn hình -->
+    <ListView
+        android:id="@+id/listViewRanking"
+        android:layout_width="match_parent"
+        android:layout_height="339dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_return"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="8dp"
+            android:text="Home page"
+            android:textColor="@color/white"
+            android:paddingHorizontal="10dp" />
+
+        <Button
+            android:id="@+id/btn_delete_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="8dp"
+            android:text="Delete All"
+            android:textColor="@color/white"
+            android:paddingHorizontal="10dp" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="8dp"
+            android:text="SEARCH"
+            android:textColor="@color/white"
+            android:paddingHorizontal="10dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
